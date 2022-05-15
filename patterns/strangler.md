@@ -43,7 +43,7 @@ graph TD
 ```
 
 ## Stage 3
-In the ideal world this is where no applications point to the Original Sytem and it can be removed. You might be tempted to remove the Decoupling Layer, but my strong suggestion is to keep it since it provides a lot of benefits by itself. One of them - the ability to make changes easier - we have already seen, but there are alot more.
+In the ideal world this is where no applications point to the Original Sytem and it can be removed. You might be tempted to remove the Decoupling Layer, but my strong suggestion is to keep it since it provides a lot of benefits by itself. One of them - the ability to make changes easier - we have already seen, but there are alot more. If you keep the decoupling layer just be careful so you don't build that into a new mononlith!
 
 ``` mermaid
 graph TD
@@ -54,4 +54,21 @@ graph TD
     D(Decoupling Layer) -.-> O(Original System)
     D --> N(New System)
     style O stroke-dasharray: 5 5
+```
+
+### Example of using a micro service architecture to implement the Decoupling Layer
+``` mermaid
+flowchart TB
+    A1-->AM
+    A2-->AM
+    A3-->AM
+    A4-->AM
+    subgraph DL [Decoupling Layer]
+        direction TB
+        AM(API Management) --> b1 & b3
+        b1(orchestration service)-->b2(microservice) & b3(microservice) & b4(microservice)
+    end
+    b2 --> N(New System)
+    b3 --> N
+    b4 --> N
 ```
