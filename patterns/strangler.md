@@ -65,10 +65,11 @@ flowchart TB
     A4-->AM
     subgraph DL [Decoupling Layer]
         direction TB
-        AM(API Management) --> b1 & b3
-        b1(orchestration service)-->b2(microservice) & b3(microservice) & b4(microservice)
+        AM(API Management) --> b1 & b2(microservice)
+        b1(orchestration service)--> b2 & b3(microservice) & b4(microservice)
     end
     b2 --> N(New System)
     b3 --> N
     b4 --> N
+    
 ```
