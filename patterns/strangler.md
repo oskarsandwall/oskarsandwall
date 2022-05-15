@@ -57,6 +57,8 @@ graph TD
 ```
 
 ### Example of using a micro service architecture to implement the Decoupling Layer
+The micro services in this case could be integrations and the orchestration service might be implementing some business rules.
+
 ``` mermaid
 flowchart TB
     A1-->AM
