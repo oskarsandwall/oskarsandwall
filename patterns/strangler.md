@@ -43,7 +43,7 @@ graph TD
 ```
 
 ## Stage 3
-In the ideal world this is where we can cut the connection to the Original System and even remove the Decoupling Layer. My strong suggestion is not to remove the decoupling layer though since it provides a lot of benefits by itself. One of them - the ability to make changes easier - we have already seen, but there are alot more.
+In the ideal world this is where no applicaitons point to the Original Sytem and the Original System can be removed. You might even want to remove the Decoupling Layer, but my strong suggestion is to keep it since it provides a lot of benefits by itself. One of them - the ability to make changes easier - we have already seen, but there are alot more.
 
 ``` mermaid
 graph TD
