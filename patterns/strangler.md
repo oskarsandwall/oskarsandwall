@@ -43,7 +43,7 @@ graph TD
 ```
 
 ## Stage 3
-In the ideal world this is where no applications point to the Original Sytem and it can be removed. You might be tempted to remove the Decoupling Layer, but my strong suggestion is to keep it since it provides a lot of benefits by itself. One of them - the ability to make changes easier - we have already seen, but there are alot more. If you keep the decoupling layer just be careful so you don't build that into a new mononlith!
+In the ideal world this is where no applications point to the Original System and it can be removed. You might be tempted to remove the Decoupling Layer, but my strong suggestion is to keep it since it provides a lot of benefits by itself. One of them - the ability to make changes easier - we have already seen, but there are alot more. If you keep the decoupling layer just be careful so you don't build that into a new mononlith!
 
 ``` mermaid
 graph TD
